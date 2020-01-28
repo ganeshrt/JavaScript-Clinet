@@ -1,0 +1,342 @@
+body {
+  background: url(/Images/background.jpg) repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.co {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.co__box {
+  flex-wrap: wrap;
+  /* width: 80%; */
+  margin-top: 50px;
+  /* border: 1px solid #7f8c8d; */
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 5px 10px 5px 2px rgba(0, 0, 0, 0.65);
+}
+
+.co__model1 {
+  flex: 1;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #7f8c8d;
+  box-sizing: border-box;
+}
+.co__model2 {
+  flex: 9;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.co__model2 > .co__Payment-block {
+  /* flex: 6; */
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+
+.co__model2 > .co__Payment-block >
+.co__Payment-block__wallet {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  align-content: center;
+}
+.co__Payment-block__wallet > h1 {
+  width: 100%;
+  color: #636e72;
+}
+ 
+.co__model2 > .co__Payment-block > .co__new-card {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 10px;
+  align-content: center;
+} 
+.co__new-card > h1{
+  flex: 1;
+  width: 100%;
+  color: #636e72;
+}
+
+
+.co__new-card > div {
+  width: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.co__new-card > div > div {
+  /* width: 350px;  */
+  align-self: center;
+  padding: 10px;
+}
+.co__new-card > div > div > div {
+  display: flex;
+  flex-direction: row;
+}
+.co__new-card > div > div > div > div {
+  flex: 1;
+  padding: 0px;
+}
+.co__new-card > div > div > div > div > input {
+  padding: 10px;
+}
+.co__model2 > .co__Payment-block > div > div {
+  flex: 1;
+  padding: 10px;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+}
+.co__model2 > .co__Payment-block  > .co__new-card {
+  flex: 1;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
+
+.co__model2 > .co__Payment-block > .co__Payment-block__wallet > div:hover {
+  background: #dcdde1;
+  border: #acadad 1px solid;
+}
+
+.co__model2 > .co__Payment-block > div > div > img {
+  flex: 9;
+  width: 90%;
+}
+.co__model2 > .co__Payment-block > div > div > h1 {
+  flex: 1;
+  text-align: center;
+}
+.co__model2 > .co__Cart-block {
+  /* flex: 4; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #dcdde1;
+  padding-bottom: 30px;
+}
+.co__Cart-product {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  
+  height: 100%;
+}
+.co__Cart-product > div {
+  padding: 5px;
+  flex: 1;
+  max-height: 80px;
+  display: flex;
+  flex-direction: row;
+  background: #e6e7eb;
+  border-bottom:#acadad 1px solid;
+}
+.co__Cart-product > div > img {
+  flex: 3;
+  max-width: 70px;
+  border: 3px solid #acadad;
+}
+.co__Cart-product > div > div {
+  flex: 6;
+  height: 80px;
+  padding: 5px;
+}
+.co__Cart-product >div >div>h1{
+
+  font-weight: bold;
+}
+.co__Cart-product >div >div>h2{
+  font-size: 15px;
+}
+.co__Cart-product > div >div>span{
+  font-style: italic;
+  font-size: 10px;
+}
+.co__Cart-product > div > .co__prize {
+  flex: 1;
+  font-weight: bold;
+}
+.co__model2 > .co__Cart-block > .co__Cart-block--product > div {
+  flex: 1;
+}
+.co__model2 > .co__Cart-block > .co__Cart-block--product > img {
+  height: 100px;
+}
+.co__Cart-bill {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.co__Cart-bill > div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border-bottom:#acadad 1px solid; */
+}
+.co__Cart-bill > .co__total
+{padding: 5px;
+  border-top:#acadad 1px solid;
+  font-weight: bold;
+}
+.co__Cart-bill >.co__sub-total{
+  padding: 5px;
+  border-top:#acadad 1px solid;
+}
+.co__Cart-bill > div > h1 {
+  flex: 9;
+  padding: 5px;
+  
+}
+.co__Cart-bill > div > span {
+  flex: 1;
+}
+
+.co__model2 > .co__Payment-block > h1 {
+  flex: 1;
+  padding: 10px;
+}
+.co__model2 > .co__Cart-block > h1 {
+  padding: 10px;
+}
+
+.co__model1__body {
+  flex: 20;
+  padding: 10px 16px;
+}
+.co__model1__body > h1 {
+  font-weight: bold;
+}
+.co__breadcrumb {
+  flex: 77;
+}
+.co__model1__close {
+  flex: 3;
+}
+.co__model1__close :hover {
+  color: #e74c3c;
+}
+
+ul.co__breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.co__breadcrumb li {
+  display: inline;
+}
+ul.co__breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.co__breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.co__breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.co__input-field {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.co__submit-btn {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.co__submit-btn:hover {
+  background-color: #45a049;
+}
+.co__bold{
+  font-weight: bold;
+}
+
+@media screen and (min-width:992px){
+  .co{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .co__Payment-block{
+    flex:3;
+  }
+  .co__Cart-block{
+    flex:2;
+  }
+}
+
+@media screen and (max-width:992px){
+  .co{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .co__Payment-block{
+    flex:3;
+  }
+  .co__Cart-block{
+    flex:2;
+  }
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+  .co__Payment-block{
+    flex:1;
+  }
+  .co__Cart-block{
+    flex:1;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .co__model2 > .co__Payment-block > div > div{
+    flex:none;
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+  .co__breadcrumb{
+    display: none;
+  }
+}
